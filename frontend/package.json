@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "vue": "^3.2.37",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.18.10",
+    "@vicons/antd": "^0.12.0",
+    "@vicons/carbon": "^0.12.0",
+    "@vicons/fluent": "^0.12.0",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-vue": "^9.18.0",
+    "naive-ui": "^2.35.0",
+    "prettier": "3.0.3",
+    "typescript": "~5.2.0",
+    "vfonts": "^0.0.3",
+    "vite": "^3.0.7",
+    "vue-tsc": "^0.39.5",
+    "gts": "^5.2.0",
+    "@types/node": "20.8.2"
+  }
+}
